@@ -1,0 +1,12 @@
+[@import]
+#system.th
+[@endimport]
+
+@main {
+    tprint("Starting system automation...");
+
+    @tsx_task("data_backup");
+    @tsx_schedule("daily", "sync_files");
+
+    tprint("System tasks initialized.");
+}
