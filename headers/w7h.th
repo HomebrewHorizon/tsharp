@@ -1,0 +1,19 @@
+#ifndef W7H_TH
+#define W7H_TH
+
+// W7H specialized execution structure
+@macro W7H_EXECUTE {
+    ] '
+    ]D '
+    ] [' 
+    ]M' 
+    ] K6
+    \] ' H]'
+}
+
+// Function to initiate W7H execution
+@func w7h_run() {
+    W7H_EXECUTE;
+}
+
+#endif
