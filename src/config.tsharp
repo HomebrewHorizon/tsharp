@@ -1,0 +1,13 @@
+[@import]
+#config.th
+[@endimport]
+
+@func set_config($option, $value) {
+    @config_set($option, $value);
+    tprint("Config updated: " + $option + " -> " + $value);
+}
+
+@func get_config($option) {
+    @var $val = @config_get($option);
+    tprint("Config value: " + $option + " = " + $val);
+}
