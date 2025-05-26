@@ -1,0 +1,8 @@
+name: TSharp
+scopeName: source.tsharp
+fileTypes: [tsharp]
+patterns:
+  - name: keyword.control.tsharp
+    match: '\\b(@func|@var|@main|@loop|@if|@tsx_task)\\b'
+  - name: string.quoted.double.tsharp
+    match: '"[^"]*"'
