@@ -1,0 +1,13 @@
+[@import]
+#trigerral.th
+[@endimport]
+
+@main {
+    tprint("Managing Trigerral Volume...");
+
+    @trigerral_set(512);
+    @trigerral_sync();
+    @trigerral_call("trigger_event");
+
+    tprint("Trigerral execution finalized.");
+}
