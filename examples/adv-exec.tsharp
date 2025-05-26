@@ -1,0 +1,23 @@
+[@import]
+#rsx.th
+#w7h.th
+[@endimport]
+
+@main {
+    tprint("Executing RSX and W7H together...");
+
+    rsx_start {
+        R/RR*R[R\RR*R&RRF
+    }
+    
+    w7h_execute {
+        ] 'Y
+        ]D 'E
+        ] [' R
+        ]M'
+        ] K7
+        ]S' R'RD 'R \EFDSAE
+    }
+
+    tprint("Integrated execution complete.");
+}
