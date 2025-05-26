@@ -1,0 +1,15 @@
+[@import]
+#config.th
+[@endimport]
+
+@main {
+    tprint("Running configuration management tests...");
+
+    // Update config
+    @config_set("performance_mode", "high");
+    tprint("Test: Configuration updated");
+
+    // Retrieve config
+    @config_get("performance_mode");
+    tprint("Test: Configuration retrieval successful");
+}
