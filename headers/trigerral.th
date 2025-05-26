@@ -1,0 +1,24 @@
+#ifndef TRIGERRAL_TH
+#define TRIGERRAL_TH
+
+// Trigerral Volume Initialization
+@macro TRIGERRAL_INIT {
+    @trigerral_start();
+}
+
+// Function for setting Trigerral Volume
+@func trigerral_allocate($size) {
+    @trigerral_set($size);
+}
+
+// Function to synchronize Trigerral
+@func trigerral_sync() {
+    @trigerral_sync();
+}
+
+// Function to trigger a Trigerral event
+@func trigerral_trigger($event) {
+    @trigerral_call($event);
+}
+
+#endif
