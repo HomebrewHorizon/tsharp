@@ -1,0 +1,20 @@
+#ifndef CONFIG_TH
+#define CONFIG_TH
+
+// Configuration management macros
+@macro CONFIG_INIT {
+    @config_set("default_mode", "active");
+}
+
+// Function to update configurations
+@func config_set_option($option, $value) {
+    @config_set($option, $value);
+}
+
+// Function to retrieve configurations
+@func config_get_option($option) {
+    @var $val = @config_get($option);
+    tprint("Config: " + $option + " = " + $val);
+}
+
+#endif
