@@ -1,0 +1,15 @@
+[@import]
+#w7h.th
+[@endimport]
+
+@func execute_w7h() {
+    w7h_execute {
+        ] '
+        ]D '
+        ] [' 
+        ] M'
+        ] K6
+        \] ' H]'
+    }
+    tprint("W7H process finalized.");
+}
