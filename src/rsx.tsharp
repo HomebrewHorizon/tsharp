@@ -1,0 +1,12 @@
+[@import]
+#rsx.th
+[@endimport]
+
+@func execute_rsx() {
+    rsx_start {
+        R/RR*R[R\RR*R&RRF
+        $R@FF*F-R]
+        !R*RF+F/RR\
+    }
+    tprint("RSX execution finished.");
+}
