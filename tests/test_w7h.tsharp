@@ -1,0 +1,19 @@
+[@import]
+#w7h.th
+[@endimport]
+
+@main {
+    tprint("Running W7H specialized execution tests...");
+
+    // Run W7H commands
+    w7h_execute {
+        ] '
+        ]D '
+        ] [' 
+        ]M'
+        ] K6
+        \] ' H]'
+    }
+
+    tprint("Test: W7H execution finalized successfully");
+}
