@@ -1,0 +1,7 @@
+@main {
+    @var $data = [10, 20, 30, 40];
+    
+    @loop ($i = 0; $i < 4; $i++) {
+        tprint("Processing data: " + $data[$i]);
+    }
+}
