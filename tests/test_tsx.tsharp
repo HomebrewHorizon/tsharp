@@ -1,0 +1,17 @@
+[@import]
+#system.th
+[@endimport]
+
+@main {
+    tprint("Running TSX system automation tests...");
+
+    // Test system automation tasks
+    @tsx_task("backup_data");
+    tprint("Test: System task executed");
+
+    @tsx_schedule("weekly", "sync_logs");
+    tprint("Test: Scheduled automation applied");
+
+    @tsx_report();
+    tprint("Test: System report generated");
+}
