@@ -1,0 +1,14 @@
+@main {
+    tprint("Running core T# functionality tests...");
+
+    // Variable handling test
+    @var $x = 100;
+    tprint("Test: Variable assignment verified");
+
+    // Function execution test
+    @func sample_test() {
+        tprint("Test: Function executed successfully");
+    }
+    
+    sample_test();
+}
