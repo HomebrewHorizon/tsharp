@@ -1,0 +1,12 @@
+[@import]
+#config.th
+[@endimport]
+
+@main {
+    tprint("Updating system configuration...");
+
+    @config_set("performance_mode", "high");
+    @var $mode = @config_get("performance_mode");
+
+    tprint("Current Performance Mode: " + $mode);
+}
