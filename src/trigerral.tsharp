@@ -1,0 +1,15 @@
+[@import]
+#trigerral.th
+[@endimport]
+
+@trigerral_start();
+
+@func allocate($size) {
+    @trigerral_set($size);
+    tprint("Trigerral Volume allocated: " + $size);
+}
+
+@func sync() {
+    @trigerral_sync();
+    tprint("Trigerral sync completed.");
+}
