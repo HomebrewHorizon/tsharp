@@ -1,0 +1,19 @@
+#ifndef SYSTEM_TH
+#define SYSTEM_TH
+
+// TSX System automation structure
+@macro TSX_SYSTEM_INIT {
+    @tsx_init();
+}
+
+// Function to trigger system automation task
+@func tsx_task_run($task) {
+    @tsx_task($task);
+}
+
+// Function to schedule automation task
+@func tsx_schedule_run($time, $action) {
+    @tsx_schedule($time, $action);
+}
+
+#endif
