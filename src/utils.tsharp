@@ -1,0 +1,8 @@
+@func log($message) {
+    tprint("Log: " + $message);
+}
+
+@func timestamp() {
+    @var $time = @system_time();
+    tprint("Current Time: " + $time);
+}
