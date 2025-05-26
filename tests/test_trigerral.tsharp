@@ -1,0 +1,19 @@
+[@import]
+#trigerral.th
+[@endimport]
+
+@main {
+    tprint("Running Trigerral Volume tests...");
+
+    // Test allocation
+    @trigerral_set(256);
+    tprint("Test: Allocation successful");
+
+    // Test sync
+    @trigerral_sync();
+    tprint("Test: Sync operation completed");
+
+    // Test trigger
+    @trigerral_call("test_event");
+    tprint("Test: Event triggered successfully");
+}
