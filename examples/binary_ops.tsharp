@@ -1,0 +1,15 @@
+[@import]
+#rsx.th
+[@endimport]
+
+@main {
+    tprint("Executing RSX binary operations...");
+
+    rsx_start {
+        R/RR*R[R\RR*R&RRF
+        $R@FF*F-R]
+        !R*RF+F/RR\
+    }
+
+    tprint("RSX execution complete.");
+}
