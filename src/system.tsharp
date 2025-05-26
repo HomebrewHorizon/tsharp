@@ -1,0 +1,13 @@
+[@import]
+#system.th
+[@endimport]
+
+@func automate($task) {
+    @tsx_task($task);
+    tprint("TSX System executing task: " + $task);
+}
+
+@func schedule($time, $action) {
+    @tsx_schedule($time, $action);
+    tprint("Scheduled: " + $action + " at " + $time);
+}
