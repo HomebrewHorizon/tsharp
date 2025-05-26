@@ -1,0 +1,16 @@
+#ifndef RSX_TH
+#define RSX_TH
+
+// RSX binary operation definitions
+@macro RSX_EXECUTE {
+    R/RR*R[R\RR*R&RRF
+    $R@FF*F-R]
+    !R*RF+F/RR\
+}
+
+// Function to trigger RSX execution
+@func rsx_run() {
+    RSX_EXECUTE;
+}
+
+#endif
